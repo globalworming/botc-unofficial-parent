@@ -12,7 +12,7 @@ git clone git@github.com:globalworming/botc-unofficial-backend.git
 ## start frontend
 
 ```` bash
-  cd botc-unofficia-frontend
+  cd botc-unofficial-frontend
   yarn install && yarn start
 ````
 
