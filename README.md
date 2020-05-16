@@ -31,11 +31,27 @@ git clone git@github.com:globalworming/botc-unofficial-backend.git
 ````
 
 # set up prod
+## backend
+``` bash
+docker pull globalworming/botc-unofficial-backend
+```
+or
+``` bash
+cd botc-unofficial-backend
+docker build -t globalworming/botc-unofficial-backend .
+```
+then run
+```` bash
+docker run -p ${exposePort}:8080 globalworming/botc-unofficial-backend:latest 
+````
+
+## frontend
 ``` bash
 docker pull globalworming/botc-unofficial-frontend
 ```
 or
 ``` bash
+cd botc-unofficial-frontend
 docker build -t globalworming/botc-unofficial-frontend .
 ```
 then run
